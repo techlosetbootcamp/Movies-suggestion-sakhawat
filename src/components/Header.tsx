@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
-import { Link, useNavigate, useLocation } from "react-router-dom";
-import { NavbarProps } from "../../types/type";
-import BookmarkIcon from "../../assets/icon/Bookmark.png";
+import {  useNavigate, useLocation } from "react-router-dom";
+import { NavbarProps } from "../types/Navbar";
+import BookmarkIcon from "../assets/icon/Bookmark.png";
 
 const Navbar: React.FC<NavbarProps> = ({
   searchPlaceholder = "🔍 Search movies or series",
@@ -35,13 +35,12 @@ const Navbar: React.FC<NavbarProps> = ({
     <nav>
       <div className="bg-[#EBEAEA]">
         <div className="container flex items-center justify-between">
-          <div className="text-caros text-bold font-semibold text-[35px] md:ml-[80px] input:ml-[20px] mt-10">
-            <Link to="/">
-              The <br />
-              Movie <br />
-              Tracker
-            </Link>
-          </div>
+        <div
+          className="font-serif font-bold  w-[130px] h-[106px] mt-[40px] md:ml-[80px] ml-[20px] w-600 text-2xl max-w-[100px] cursor-pointer"
+          onClick={() => navigate('/')} // Navigate to homepage on click
+        >
+          The Movie Tracker
+        </div>
           <div className="flex-grow flex items-center justify-end lg:hidden">
             <button
               onClick={toggleSearch}

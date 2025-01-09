@@ -1,4 +1,4 @@
-import { SeasonPosterProps } from "../../types/type";
+import { SeasonPosterProps } from "../types/Seasons";
 
 const SeasonPoster: React.FC<SeasonPosterProps> = ({
   imageUrl,

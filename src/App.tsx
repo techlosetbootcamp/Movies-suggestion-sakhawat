@@ -11,8 +11,8 @@
 
 import  { useEffect } from "react";
 import {  useDispatch } from "react-redux";
-import { AppDispatch } from "./redux/store"; // Ensure this matches your setup
-import { fetchMovies } from "./redux/slices/movieSlice";
+import { AppDispatch } from "./store/store"; // Ensure this matches your setup
+import { fetchMovies } from "./store/slices/movieSlice";
 import AppRoutes from "./routing/AppRoutes";
 
 function App() {

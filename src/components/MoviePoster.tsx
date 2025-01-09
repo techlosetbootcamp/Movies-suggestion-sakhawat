@@ -1,5 +1,5 @@
 import { useNavigate } from "react-router-dom";
-import { MoviePosterProps } from "../../types/type";
+import { MoviePosterProps } from "../types/Movies";
 
 const MoviePoster: React.FC<MoviePosterProps> = ({
   imageUrl,

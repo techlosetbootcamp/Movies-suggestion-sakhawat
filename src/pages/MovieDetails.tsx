@@ -1,6 +1,6 @@
-import MovieDetail from "../components/movieDetails/MovieDetails";
-import Loader from "../components/loader/loader";
-import Seasons from "../components/season/Season";
+import MovieDetail from "../components/MovieDetails";
+import Loader from "../components/Loader";
+import Seasons from "../components/Season";
 import useMovies from "../hooks/useMovies";
 
 export default function Movie() {

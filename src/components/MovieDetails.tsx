@@ -1,6 +1,6 @@
-import Loader from "../loader/loader";
-import Icon from "../../assets/icon/Bookmark.png";
-import  {useMovieDetails}   from "../../hooks/useMovieDetails";
+import Loader from "../components/Loader";
+import Icon from "../assets/icon/Bookmark.png";
+import  {useMovieDetails}   from "../hooks/useMovieDetails";
 
 export default function MovieDetails() {
   const { movieData, isLoading } = useMovieDetails();
@@ -53,7 +53,7 @@ export default function MovieDetails() {
                   alt="Movie Poster"
                 />
               </div>
-              <div className="relative lg:mt-[31px] input:mt-[61px] ">
+              <div className="relative lg:mt-[31px] input:mt-[61px] mt-14 ">
                 <div className="flex flex-row text-[18px] justify-start text-center lg:ml-[-110px] ">
                   <span className="rounded-full w-[88px] font-roboto border-[1px] text-[18px] border-black font-medium leading-[21px] border-solid  h-[33px]  py-1.5 me-2.5">
                     Action

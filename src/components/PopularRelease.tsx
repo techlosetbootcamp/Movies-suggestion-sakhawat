@@ -1,6 +1,6 @@
-import  useMovies  from "../../hooks/useMovies";
-import MoviePoster from "../../components/moviePoster/MoviePoster";
-import Loader from "../loader/loader";
+import  useMovies  from "../hooks/useMovies";
+import MoviePoster from "../components/MoviePoster";
+import Loader from "./Loader";
 
 export default function PopularReleases() {
   const {movies,loading,error} = useMovies();
@@ -11,7 +11,7 @@ export default function PopularReleases() {
     return <div>Error: {error}</div>
   }
   return (
-    <div className="container mx-auto mb-4 pt-4 ">
+    <div className="container mx-auto mb-4 pt-4  ">
       <h1 className="mb-[11px] mt-[48px] text-[20px] font-bold">
         Popular Releases
       </h1>

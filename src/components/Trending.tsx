@@ -1,6 +1,6 @@
-import useMovies from "../../hooks/useMovies";
-import MoviePoster from "../moviePoster/MoviePoster";
-import Loader from "../loader/loader";
+import useMovies from "../hooks/useMovies";
+import MoviePoster from "./MoviePoster";
+import Loader from "./Loader";
 
 export default function Trending() {
   const {movies,loading,error} = useMovies();

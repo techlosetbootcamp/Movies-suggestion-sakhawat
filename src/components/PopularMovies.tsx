@@ -1,6 +1,6 @@
-import useMovies from "../../hooks/useMovies";
-import Loader from "../loader/loader";
-import MoviePoster from "../moviePoster/MoviePoster";
+import useMovies from "../hooks/useMovies";
+import Loader from "./Loader";
+import MoviePoster from "../components/MoviePoster";
 
 export default function PopularMovies() {
   const {movies,loading,error} = useMovies();

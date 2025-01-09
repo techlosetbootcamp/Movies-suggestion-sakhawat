@@ -1,6 +1,6 @@
-import  useMovies  from "../../hooks/useMovies";
-import SeasonPoster from "../../components/seasonPoster/SeasonPoster";
-import Loader from "../loader/loader";
+import  useMovies  from "../hooks/useMovies";
+import SeasonPoster from "../components/SeasonPoster";
+import Loader from "./Loader";
 
 export default function Seasons() {
   const {seasons,loading,error} = useMovies();
@@ -31,7 +31,7 @@ export default function Seasons() {
           </div>
         </div>
         <div className="grid md:grid-cols-4 grid-cols-2 gap-4">
-          {seasons.slice(0, 20).map((season) => (
+          {seasons.slice(0, 4).map((season) => (
             <div key={season.id}>
               <SeasonPoster
                 imageUrl={`https://image.tmdb.org/t/p/w500${season.poster_path}`}

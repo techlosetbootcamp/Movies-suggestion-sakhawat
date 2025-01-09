@@ -1,11 +1,11 @@
 import { useEffect, useState } from "react";
 import { useSelector } from "react-redux";
 import { useParams } from "react-router-dom";
-import { selectAllMovies, selectIsLoading } from "../redux/slices/movieSlice";
-import { selectAllSearch } from "../redux/slices/searchSlice";
-import { Movie } from "../types/type";
+import { selectAllMovies, selectIsLoading } from "../store/slices/movieSlice";
+import { selectAllSearch } from "../store/slices/searchSlice";
+import { Movie } from "../types/Movies";
 import instance from "../constants/instance";
-import { RootState } from "../redux/store";
+import { RootState } from "../store/store";
 
 export function useMovieDetails(): { movieData: Movie | null; isLoading: boolean } {
   const { id: movieId } = useParams();
