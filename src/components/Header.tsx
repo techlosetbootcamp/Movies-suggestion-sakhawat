@@ -40,7 +40,7 @@ const Navbar: React.FC<NavbarProps> = ({
           >
             The Movie Tracker
           </div>
-          <div className="flex-grow flex items-center justify-end lg:hidden">
+          <div className="flex-grow flex items-center justify-end  lg:hidden">
             <button
               onClick={toggleSearch}
               className="bg-gray-300 h-10 w-10 flex items-center justify-center rounded-full focus:outline-none text-xl font-bold mr-2"

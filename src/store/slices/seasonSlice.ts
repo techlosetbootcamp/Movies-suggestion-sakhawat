@@ -1,6 +1,6 @@
 import { createSlice, createAsyncThunk } from "@reduxjs/toolkit";
 import instance from "../../constants/instance";
-import { SeasonState } from "../../types/type";
+import { SeasonState } from "../../types/Seasons";
 
 export const fetchSeries = createAsyncThunk("series/fetchSeries", async () => {
   try {

@@ -1,7 +1,7 @@
 import { createSlice, createAsyncThunk, PayloadAction } from "@reduxjs/toolkit";
 import instance from "../../constants/instance";
-import { SearchMovie } from "../../types/type";
-import { SearchState } from "../../types/type";
+import { SearchMovie } from "../../types/Search";
+import { SearchState } from "../../types/Search";
 
 export const searchMovies = createAsyncThunk(
   "search/searchMovies",
