@@ -12,7 +12,7 @@ export default function Trending() {
   }
   return (
     <div className="col-span-12 sm:col-span-8 md:ms-5">
-      <h1 className="mb-[11px] mt-[40px] ml-[20px] text-[20px] font-bold">
+      <h1 className="mb-[11px] mt-[40px] ml-[10px] text-[20px] font-bold">
         Trending
       </h1>
       <div className="grid grid-cols-12 gap-4 mr-[15px] ">
