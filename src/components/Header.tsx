@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import {  useNavigate, useLocation } from "react-router-dom";
+import { useNavigate, useLocation } from "react-router-dom";
 import { NavbarProps } from "../types/Navbar";
 import BookmarkIcon from "../assets/icon/Bookmark.png";
 
@@ -32,23 +32,26 @@ const Navbar: React.FC<NavbarProps> = ({
   };
 
   return (
-    <nav>
       <div className="bg-[#EBEAEA]">
-        <div className="container flex items-center justify-between">
-        <div
-          className="font-serif font-bold  w-[130px] h-[106px] mt-[40px] md:ml-[80px] ml-[20px] w-600 text-2xl max-w-[100px] cursor-pointer"
-          onClick={() => navigate('/')} 
-        >
-          The Movie Tracker
-        </div>
+        <div className="container flex items-center justify-between ">
+          <div
+            className="font-serif font-bold  w-[130px] h-[106px] mt-[40px] md:ml-[80px] ml-[20px] w-600 text-2xl max-w-[100px] cursor-pointer"
+            onClick={() => navigate("/")}
+          >
+            The Movie Tracker
+          </div>
           <div className="flex-grow flex items-center justify-end lg:hidden">
             <button
               onClick={toggleSearch}
               className="bg-gray-300 h-10 w-10 flex items-center justify-center rounded-full focus:outline-none text-xl font-bold mr-2"
             >
+              {!isSearchVisible? 
               <span role="img" aria-label="Search Icon">
                 🔍
-              </span>
+              </span> :
+              <span role="img" aria-label="Search Icon">
+              +
+            </span> }
             </button>
             {showPlusButton && (
               <button className="bg-gray-300 h-10 w-10 flex items-center justify-center rounded-full focus:outline-none">
@@ -57,21 +60,22 @@ const Navbar: React.FC<NavbarProps> = ({
             )}
           </div>
           <div
-            className={`flex-grow ${isSearchVisible ? "" : "hidden"} lg:flex`}
+            className={`absolute top-[140px] left-0 right-0 px-4 ${
+              isSearchVisible ? "block" : "hidden"
+            } lg:flex lg:static lg:px-0`}
           >
-            <form onSubmit={handleSearchSubmit}>
+            <form onSubmit={handleSearchSubmit} className="w-full lg:w-auto">
               <input
                 type="text"
                 placeholder={searchPlaceholder}
                 value={searchQuery}
                 onChange={handleSearchChange}
-                className="px-4 py-2 lg:ml-[300px] rounded-full focus:outline-none text-center bg-gray-300 focus:ring focus:border-blue-100 lg:w-[630px] lg:h-[57px] lg:placeholder:text-[20px] placeholder:text-black"
+                className="px-4 py-2 rounded-full focus:outline-none text-center bg-gray-300 focus:ring focus:border-blue-100 lg:w-[630px] lg:h-[57px] lg:placeholder:text-[20px] placeholder:text-black w-full"
               />
             </form>
           </div>
         </div>
       </div>
-    </nav>
   );
 };
 
