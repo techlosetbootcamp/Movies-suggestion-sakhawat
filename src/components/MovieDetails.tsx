@@ -10,7 +10,6 @@ export default function MovieDetails() {
   }
 
   if (!movieData) {
-    console.log(movieData)
     return <div>Movie data not found</div>;
   }
 

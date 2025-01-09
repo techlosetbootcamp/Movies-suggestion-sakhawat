@@ -37,7 +37,7 @@ const Navbar: React.FC<NavbarProps> = ({
         <div className="container flex items-center justify-between">
         <div
           className="font-serif font-bold  w-[130px] h-[106px] mt-[40px] md:ml-[80px] ml-[20px] w-600 text-2xl max-w-[100px] cursor-pointer"
-          onClick={() => navigate('/')} // Navigate to homepage on click
+          onClick={() => navigate('/')} 
         >
           The Movie Tracker
         </div>

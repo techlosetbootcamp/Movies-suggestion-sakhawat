@@ -13,12 +13,12 @@ export interface MovieDetail {
   title: string;
   overview: string;
   poster_path: string | null;
-  release_date: string; // Release date of the movie
-  genres: { id: number; name: string }[]; // Movie genres
-  vote_average: number; // IMDb rating for movie
-  runtime: number; // Runtime of the movie (in minutes)
-  tagline: string; // Optional tagline for the movie
-  backdrop_path: string | null; // Backdrop image for the movie
+  release_date: string; 
+  genres: { id: number; name: string }[]; 
+  vote_average: number; 
+  runtime: number; 
+  tagline: string; 
+  backdrop_path: string | null;
   video: boolean;
   genre_ids: number[];
   vote_count: number;

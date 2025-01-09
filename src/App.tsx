@@ -1,23 +1,12 @@
-// import React from 'react';
-// import AppRoutes from './routing/AppRoutes.tsx'; 
-
-// function App() {
-//   return (
-//       <AppRoutes />
-//   );
-// }
-
-// export default App;
 
 import  { useEffect } from "react";
 import {  useDispatch } from "react-redux";
-import { AppDispatch } from "./store/store"; // Ensure this matches your setup
+import { AppDispatch } from "./store/store"; 
 import { fetchMovies } from "./store/slices/movieSlice";
 import AppRoutes from "./routing/AppRoutes";
 
 function App() {
   const dispatch = useDispatch<AppDispatch>();
-  // const { movies, loading, error } = useSelector(selectMovies);
 
   useEffect(() => {
     dispatch(fetchMovies());
