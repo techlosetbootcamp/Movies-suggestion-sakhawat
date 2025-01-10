@@ -8,7 +8,7 @@ export default function Home() {
   const { loading } = useMovies();
   return (
     <div className="bg-[#EBEAEA] ">
-      <div className="container flex flex-col lg:ml-[80px] ml-[20px]  bg-[#EBEAEA]">
+      <div className="container flex flex-col lg:ml-[80px] ml-[20px] mr-4">
         {loading ? (
           <Loader />
         ) : (

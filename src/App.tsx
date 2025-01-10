@@ -13,9 +13,11 @@ function App() {
   }, [dispatch]);
 
   return (
-    <>
-      <AppRoutes />
-    </>
+    <div>
+
+    <AppRoutes />
+    </div>
+    
   );
 }
 

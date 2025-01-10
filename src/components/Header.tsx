@@ -32,15 +32,15 @@ const Navbar: React.FC<NavbarProps> = ({
   };
 
   return (
-      <div className="bg-[#EBEAEA]">
-        <div className="container flex items-center justify-between ">
+      <div className="bg-[#EBEAEA] w-full">
+        <div className="container flex items-center justify-between   ">
           <div
             className="font-serif font-bold  w-[130px] h-[106px] mt-[40px] md:ml-[80px] ml-[20px] w-600 text-2xl max-w-[100px] cursor-pointer"
             onClick={() => navigate("/")}
           >
             The Movie Tracker
           </div>
-          <div className="flex-grow flex items-center justify-end  lg:hidden">
+          <div className="flex-grow flex items-center justify-end   lg:hidden">
             <button
               onClick={toggleSearch}
               className="bg-gray-300 h-10 w-10 flex items-center justify-center rounded-full focus:outline-none text-xl font-bold mr-2"
