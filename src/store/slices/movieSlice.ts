@@ -6,10 +6,17 @@ export const fetchMovies = createAsyncThunk("movies/fetchMovies", async () => {
   try {
     const response = await instance.get("trending/movie/day?language=en-US");
     return response.data.results;
-  } catch  {
-    throw new Error("Failed to fetch movies.");
+  } catch (error) {
+    if (error instanceof Error) {
+      console.error("Error fetching movies:", error.message);
+      throw new Error(error.message);
+    } else {
+      console.error("An unknown error occurred:", error);
+      throw new Error("Failed to fetch movies.");
+    }
   }
 });
+
 
 const moviesSlice = createSlice({
   name: "movies",
