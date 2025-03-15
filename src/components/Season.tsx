@@ -12,7 +12,7 @@ export default function Seasons() {
   }
   return (
     <>
-      <div className="container mt-[360px] md:my-2 mx-auto lg:ml-[60px] py-4">
+      <div className="container mt-[360px] md:my-2 mx-auto lg:ml-[20px] py-4">
         <div className="grid grid-cols-2 gap-4 mb-[30px] ml-[20px] ">
           <div className="flex flex-row gap-4">
             <h1 className="font-bold text-4xl leading-9 ">Seasons</h1>
@@ -30,7 +30,7 @@ export default function Seasons() {
             </span>
           </div>
         </div>
-        <div className="grid md:grid-cols-4 grid-cols-2 gap-4 ml-[20px]">
+        <div className="grid md:grid-cols-4 grid-cols-2 gap-6 ml-[20px]">
           {seasons.slice(0, 4).map((season) => (
             <div key={season.id}>
               <SeasonPoster

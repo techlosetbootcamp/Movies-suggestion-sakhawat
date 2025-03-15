@@ -14,7 +14,7 @@ export default function MovieDetails() {
   }
 
   return (
-    <div className="container  lg:ml-[80px] ml-[20px]  ">
+    <div className="container lg:ml-[35px] ml-[20px]  ">
         <div className="grid md:grid-cols-2 sm:grid-cols-1 gap-4">
           {movieData ? (
             <div className="col-span sm:w-full">
@@ -42,9 +42,9 @@ export default function MovieDetails() {
             </button>
           </div>
         </div>
-        <div className="container mx-auto  py-4">
+        <div className="container mx-auto py-3 sm:py-4">
           <div className="grid lg:grid-cols-2 sm:grid-cols-1 gap-3 ">
-            <div className="grid md:grid-cols-2 sm:grid-cols-1  z-10 md:static absolute gap-5">
+            <div className="grid md:grid-cols-2 sm:grid-cols-1  z-10 md:static absolute gap-16">
               <div className="md:w-[196px] w-[98px] relative md:top-0 md:left-0 top-[55px] left-8">
                 <img
                   className="lg:w-[196px] lg:h-[291px] sm:w-[98px] sm:h-[146px] md:w-[196px] md:h-[98px] mt-[25px] rounded-[20px]"
@@ -61,7 +61,7 @@ export default function MovieDetails() {
                     Sci-Fr
                   </span>
                 </div>
-                <p className="font-medium text-[18px] text-wrap w-auto mt-[19px] lg:ml-[-110px] ">
+                <p className="font-medium text-[15px] sm:text-[18px] text-wrap w-auto mt-[19px] lg:ml-[-110px] ">
                   {movieData.overview.slice(0, 300)}
                 </p>
                 <h3 className="text-[18px] font-bold font-roboto lg:ml-[-110px] ">
@@ -76,7 +76,7 @@ export default function MovieDetails() {
             <div className="grid grid-cols-1 md:static relative ">
               <div className="input:mr-[20px] ">
                 <img
-                  className="sm:h-[146px] lg:w-[521px] w-[350px] lg:h-[291px] rounded-[20px] lg:ml-[100px]  "
+                  className="sm:h-[146px] lg:w-[521px] w-[320px] lg:h-[291px] rounded-[20px] lg:ml-[100px]  "
                   src={`https://image.tmdb.org/t/p/original/${movieData.backdrop_path}`}
                   alt="Movie Scene"
                 />
