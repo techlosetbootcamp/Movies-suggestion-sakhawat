@@ -21,7 +21,7 @@ export default function Home() {
             </div>
           </div>
         )}
-        {!loading && <PopularReleases className="mt-6" />}
+        {!loading && <PopularReleases />}
       </div>
     </div>
   );
